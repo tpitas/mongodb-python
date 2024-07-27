@@ -30,4 +30,9 @@ class Load:
 lo = Load()
 # MongoDB Connection strings
 lo.to_mongodb(host = "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.5", 
-              port = 27017, username = "barry", password = "Passw0rd", db = "cogsley", collection = "cogsley_sales", dataset = dataset)   
+              port = 27017, username = "barry", password = "Passw0rd", db = "cogsley", collection = "cogsley_sales", dataset = dataset) 
+
+# After running the script, we can verify that the data was added to the collection using a MongoDB client command:
+# mongosh
+# use cogsley
+# db.cogsley_sales.find()
