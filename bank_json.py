@@ -12,7 +12,7 @@ db = client["db_data"]
 bank_collection = db["banks"]
 
 # Loading or Opening the json file
-with open('/Users/thiernobarry/Desktop/Datasets/Oreilly_2024/JobReadyPython/data/bank_transactions.json') as file:
+with open("/data/bank_transactions.json") as file:
     file_data = json.load(file)
      
 # Inserting the loaded data in the bank_collection
